@@ -1,3 +1,3 @@
-# benchmarker:tags/add_after_checking
+# benchmarker:tags/add_filtered
 
 tag @s[tag=!benchmarker.temp] add benchmarker.temp
