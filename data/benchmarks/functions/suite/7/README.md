@@ -21,6 +21,20 @@
     - Has tag `benchmarks.single`
 
 ## Candidates
+```
+benchmarks:suite/7/1.self
+benchmarks:suite/7/2.uuid
+benchmarks:suite/7/3.dxyz
+benchmarks:suite/7/4.type_dxyz
+benchmarks:suite/7/5.type_dxyz_limit
+benchmarks:suite/7/6.type_tag_dxyz
+benchmarks:suite/7/7.dxyz_no_match
+benchmarks:suite/7/8.type_tag_dxyz_no_match
+benchmarks:suite/7/9.type_tag_xyz_distance
+benchmarks:suite/7/10.tag
+benchmarks:suite/7/11.type_tag
+benchmarks:suite/7/12.type_tag_limit
+```
 
 ### [Candidate 1: Self selector](./1.self.mcfunction)
 ```mcfunction
