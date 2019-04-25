@@ -33,73 +33,73 @@ benchmarks:suite/7/11.type_tag
 benchmarks:suite/7/12.type_tag_limit
 ```
 
-### [Candidate 1: Self selector](./1.self.mcfunction)
+### [Candidate 1: Self selector](../../../1.self.mcfunction)
 ```mcfunction
 execute as @s run
 ```
 ![image](./images/1.png)
 
-### [Candidate 2: Static UUID](./2.uuid.mcfunction)
+### [Candidate 2: Static UUID](../../../2.uuid.mcfunction)
 ```mcfunction
 execute as 0-0-0-0-1 run
 ```
 ![image](./images/2.png)
 
-### [Candidate 3: Bounding box](./3.dxyz.mcfunction)
+### [Candidate 3: Bounding box](../../../3.dxyz.mcfunction)
 ```mcfunction
 execute as @e[x=0, y=120, z=0, dx=1, dy=1, dz=1] run
 ```
 ![image](./images/3.png)
 
-### [Candidate 4: Type and bounding box](./4.type_dxyz.mcfunction)
+### [Candidate 4: Type and bounding box](../../../4.type_dxyz.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, x=0, y=120, z=0, dx=1, dy=1, dz=1] run
 ```
 ![image](./images/4.png)
 
-### [Candidate 5: Type and bounding box with limit](./5.type_dxyz_limit.mcfunction)
+### [Candidate 5: Type and bounding box with limit](../../../5.type_dxyz_limit.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, x=0, y=120, z=0, dx=1, dy=1, dz=1, limit=1] run
 ```
 ![image](./images/5.png)
 
-### [Candidate 6: Type, tag, and bounding box](./6.type_tag_dxyz.mcfunction)
+### [Candidate 6: Type, tag, and bounding box](../../../6.type_tag_dxyz.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, tag=benchmarks.single, x=0, y=120, z=0, dx=1, dy=1, dz=1] run
 ```
 ![image](./images/6.png)
 
-### [Candidate 7: Bounding box without a match](./7.dxyz_no_match.mcfunction)
+### [Candidate 7: Bounding box without a match](../../../7.dxyz_no_match.mcfunction)
 ```mcfunction
 execute as @e[x=0, y=-20, z=0, dx=1, dy=1, dz=1] run
 ```
 ![image](./images/7.png)
 
-### [Candidate 8: Type, tag, and bounding box without a match](./8.type_tag_dxyz_no_match.mcfunction)
+### [Candidate 8: Type, tag, and bounding box without a match](../../../8.type_tag_dxyz_no_match.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, tag=benchmarks.nothing, x=0, y=120, z=0, dx=1, dy=1, dz=1] run
 ```
 ![image](./images/8.png)
 
-### [Candidate 9: Type, tag, and bounding sphere](./9.type_tag_xyz_distance.mcfunction)
+### [Candidate 9: Type, tag, and bounding sphere](../../../9.type_tag_xyz_distance.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, tag=benchmarks.single, x=0, y=120, z=0, distance=..1] run
 ```
 ![image](./images/9.png)
 
-### [Candidate 10: Tag only](./10.tag.mcfunction)
+### [Candidate 10: Tag only](../../../10.tag.mcfunction)
 ```mcfunction
 execute as @e[tag=benchmarks.single] run
 ```
 ![image](./images/10.png)
 
-### [Candidate 11: Type and tag](./11.type_tag.mcfunction)
+### [Candidate 11: Type and tag](../../../11.type_tag.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, tag=benchmarks.single] run
 ```
 ![image](./images/11.png)
 
-### [Candidate 12: Type, tag, and limit](./12.type_tag_limit.mcfunction)
+### [Candidate 12: Type, tag, and limit](../../../12.type_tag_limit.mcfunction)
 ```mcfunction
 execute as @e[type=minecraft:armor_stand, tag=benchmarks.single, limit=1] run
 ```
